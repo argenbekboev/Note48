@@ -1,0 +1,20 @@
+object Versions {
+    const val AGP = "7.3.0"
+    const val kotlin = "1.7.10"
+    const val hilt = "2.44"
+    const val androidCore = "1.9.o"
+    const val appcompat = "1.5.0"
+    const val material = "1.7.0"
+    const val constraint = "2.1.4"
+    const val junit = "4.13.2"
+    const val extJunit = "1.1.4"
+    const val espresso  = "3.5.0"
+    const val fragment = "1.5.5"
+    const val room = "2.5.0"
+    const val navigation = "2.5.3"
+    const val lifecycle = "2.5.1"
+    const val viewBindingPropertyDelegate = "1.5.8"
+    const val coroutines = "1.6.4"
+    const val core = "1.9.0"
+
+}

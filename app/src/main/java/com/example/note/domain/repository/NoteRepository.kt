@@ -1,14 +1,16 @@
 package com.example.note.domain.repository
 
 import com.example.note.domain.model.Note
+import com.example.note.domain.utils.Resource
+import java.util.concurrent.Flow
 
 interface NoteRepository {
 
-    fun createNote(note: Note)
+    fun createNote(note: Note): kotlinx.coroutines.flow.Flow<Resource<Unit>>
 
-    fun editNote(note: Note)
+    fun editNote(note: Note): kotlinx.coroutines.flow.Flow<Resource<Unit>>
 
-    fun deleteNote(note: Note)
+    fun deleteNote(note: Note): kotlinx.coroutines.flow.Flow<Resource<Unit>>
 
-    fun getNotes(): List<Note>
+    fun getNotes(): kotlinx.coroutines.flow.Flow<Resource<List<Note>>>
 }
